@@ -1,0 +1,98 @@
+<html t:type="layout" title="Cadastro Novo Afastamento"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+        >
+
+
+<t:form t:id="cadastro" class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Entre com as informacoes do afastamento:</legend>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Nome Evento:</label>
+  <div class="controls">
+           <t:textfield t:id="nomeevento" placeholder="Nome Evento" validate="required"/>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Nome Cidade:</label>
+  <div class="controls">
+           <t:textfield t:id="nomecidade" placeholder="Nome Cidade" validate="required"/>
+  </div>
+</div>
+
+<!-- Data Field -->
+<div class="control-group">
+  <label class="control-label" for="textinput">Inicio do Afastamento:</label>
+  <div class="controls">
+       <t:datefield t:id="datainicio_afast" t:format="prop:dateInFormatStr" validate="required"/>
+    </div>
+</div>
+
+<!-- Data Field -->
+<div class="control-group">
+  <label class="control-label" for="textinput">Fim do Afastamento:</label>
+  <div class="controls">
+       <t:datefield t:id="datafim_afast" t:format="prop:dateInFormatStr" validate="required"/>
+    </div>
+</div>
+
+<!-- Data Field -->
+<div class="control-group">
+  <label class="control-label" for="textinput">Inicio do Evento:</label>
+  <div class="controls">
+       <t:datefield t:id="datainicio_evento" t:format="prop:dateInFormatStr" validate="required"/>
+    </div>
+</div>
+
+<!-- Data Field -->
+<div class="control-group">
+  <label class="control-label" for="textinput">Fim do Evento:</label>
+  <div class="controls">
+       <t:datefield t:id="datafim_evento" t:format="prop:dateInFormatStr" validate="required"/>
+    </div>
+</div>
+
+<!-- Select Basic -->
+<div class="control-group">
+  <t:label for="tipoAfastamento"/>:
+  <div class="controls">
+    <t:select t:id="tipoAfastamento"/>
+    </div>
+</div>
+
+<!-- Select Basic -->
+<div class="control-group">
+  <t:label for="tipoOnus"/>:
+  <div class="controls">
+    <t:select t:id="tipoOnus"/>
+    </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Descreva o motivo do afastamento se achar necessario:</label>
+  <div class="controls">
+           <t:textarea t:id="motivo_afast" placeholder="Motivo Afastamento"/>
+  </div>
+</div>
+
+
+
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="singlebutton"></label>
+  <div class="controls">
+    <t:submit class="btn btn-primary" value="Salvar"/>
+  </div>
+</div>
+
+</fieldset>
+</t:form>
+
+               
+</html>

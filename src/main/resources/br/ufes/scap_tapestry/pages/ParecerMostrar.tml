@@ -1,0 +1,15 @@
+<html t:type="layout" title="Mostrar Pareceres"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter"  >
+
+<div style="margin: 50px; margin-left:auto">
+
+<t:grid source="pareceres" row="parecer">
+   	<p:empty>
+      	<div class="alert alert-info" role="alert">Nenhum parecer cadastrado para esse afastamento.</div>
+ 	</p:empty>
+</t:grid>
+
+</div>
+        
+ </html>

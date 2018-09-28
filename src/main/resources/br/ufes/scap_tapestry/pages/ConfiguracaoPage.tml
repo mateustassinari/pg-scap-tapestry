@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+        >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Configuracao SCAP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="${asset:context:/favicon.ico}"/>
+</head>
+
+<body>
+
+ <div class="container">
+
+<t:form t:id="cadastro" class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Insira os dados do Secretario:</legend>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Nome:</label>
+  <div class="controls">
+           <t:textfield t:id="nome" placeholder="seu nome" validate="required"/>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Sobrenome:</label>
+  <div class="controls">
+           <t:textfield t:id="sobrenome" placeholder="seu sobrenome" validate="required"/>    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Email:</label>
+  <div class="controls">
+              <t:textfield t:id="email" placeholder="exemplo@exemplo.com" validate="required"/>    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Matricula:</label>
+  <div class="controls">
+    <t:textfield t:id="matricula" placeholder="00000000" validate="required"/>    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Telefone:</label>
+  <div class="controls">
+    <t:textfield t:id="telefone" placeholder="00000-0000" validate="required"/>    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="control-group">
+  <label class="control-label" for="passwordinput">Password:</label>
+  <div class="controls">
+    <t:passwordfield t:id="password" placeholder="000000" validate="required"/>  
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="control-group">
+  <t:label for="tipoPessoa"/>:
+  <div class="controls">
+    <t:select t:id="tipoPessoa" model="literal:Secretario"/>
+    </div>
+</div>
+
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="singlebutton"></label>
+  <div class="controls">
+    <t:submit class="btn btn-primary" value="Salvar"/>
+  </div>
+</div>
+
+</fieldset>
+</t:form>
+
+</div>
+
+</body>
+               
+</html>

@@ -1,0 +1,46 @@
+<html t:type="layout" title="Mudar Status Afastamento"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+          xmlns:p = "tapestry:parameter"> 
+
+
+<t:form t:id="cadastro" class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Selecione o novo Status:</legend>
+
+<t:if test="professor">
+
+<!-- Select Basic -->
+<div class="control-group">
+  <t:label for="tipoStatusProf"/>:
+  <div class="controls">
+    <t:select t:id="tipoStatusProf" model="literal:CANCELADO" validate="required"/>
+    </div>
+</div>
+
+<p:else>
+<!-- Select Basic -->
+<div class="control-group">
+  <t:label for="tipoStatusSecre"/>:
+  <div class="controls">
+    <t:select t:id="tipoStatusSecre" model="literal:APROVADO_DI,ARQUIVADO" validate="required"/>
+    </div>
+</div>
+</p:else>
+
+</t:if>
+
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="singlebutton"></label>
+  <div class="controls">
+    <t:submit class="btn btn-primary" value="Salvar"/>
+  </div>
+</div>
+
+</fieldset>
+</t:form>
+
+               
+</html>
