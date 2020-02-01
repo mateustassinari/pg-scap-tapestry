@@ -141,7 +141,7 @@
     </repositories>
 
     <properties>
-        <tapestry-release-version>5.4.3</tapestry-release-version>
+        <tapestry-release-version>5.4.5</tapestry-release-version>
         <servlet-api-release-version>2.5</servlet-api-release-version>
         <slf4j-release-version>1.7.19</slf4j-release-version>
 
