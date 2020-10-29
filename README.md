@@ -1,5 +1,5 @@
 # pg-scap-tapestry
-Para rodar o projeto vamos precisar de:
+To run the project we will need:
 
 * Eclipse IDE
 * Tomcat 9.0
@@ -42,7 +42,7 @@ To create a JTA datasource for Scap in Tomcat, open the file $TOMCAT_HOME/conf/c
 <Resource name="jdbc/Scap_tapestry" auth="Container" type="javax.sql.DataSource" maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="scap2" password="scap2" driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/scap2"/>
 ```
 
-# Rodando o projeto
-1. Abra a visão Servers, um clique com botão direito no tomcat e clique em Add and Remove, escolha o projeto Scap_tapestry e finalize;
+# Running the project
+1. Open the Servers view, right-click the tomcat and click Add and Remove, choose the Scap_tapestry project and finish;
 
-2. Rode o Tomcat e abra localhost:8080/Scap_tapestry
+2. Run Tomcat and open localhost:8080/Scap_tapestry
