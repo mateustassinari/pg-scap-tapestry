@@ -7,7 +7,7 @@ To run the project we will need:
 * MySQL Connector/J JDBC Driver
 * MySQL Workbench 
 
-# Set-up Eclipse to work with WildFly
+# Set-up Eclipse to work with Tomcat
 To deploy our application in Tomcat during development more easily, it's recommended to integrate the IDE Eclipse with the application server Tomcat. This is done with some tools, which can now be installed in a more straightforward way in the latest Eclipse version:
 
 1. Open Eclipse;
