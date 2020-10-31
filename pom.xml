@@ -43,7 +43,7 @@
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
-            <version>6.0.13.Final</version>
+            <version>6.1.0.Final</version>
         </dependency>
         <!-- Include the Log4j implementation for the SLF4J logging framework -->
         <dependency>
@@ -123,7 +123,7 @@
         </repository>
     </repositories>
     <properties>
-        <tapestry-release-version>5.4.3</tapestry-release-version>
+        <tapestry-release-version>5.6.1</tapestry-release-version>
         <servlet-api-release-version>2.5</servlet-api-release-version>
         <slf4j-release-version>1.7.19</slf4j-release-version>
     </properties>
