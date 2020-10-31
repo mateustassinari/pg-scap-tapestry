@@ -1,71 +1,64 @@
-<html t:type="layout" title="Dados do Afastamento"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
-      xmlns:p="tapestry:parameter"  >
+<html t:type="layout" title="Dados do Afastamento" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
 
 
-<div class="row">
-	<div class="col-lg-4">
-				<div class="panel panel-info">
-					  <div class="panel-heading" style="color:#fff;background-color:#337ab7;border-color:#2e6da4">
-					    <h3 class="panel-title">Solicitante</h3>
-					  </div>
-					  <div class="panel-body">
-					    <span>${dados.get(0)}</span><br></br>
-					   	Matricula: <span>${dados.get(1)}</span><br></br>
-					    Email: <span>${dados.get(2)}</span><br></br>
-					    Tel: <span>${dados.get(3)}</span>
-					  </div>
-				 </div>
-	</div>
-	<div class="col-lg-4">
-		<div class="panel panel-info">
-					  <div class="panel-heading" style="color:#fff;background-color:#337ab7;border-color:#2e6da4">
-					    <h3 class="panel-title">Evento</h3>
-					  </div>
-					  <div class="panel-body">
-					    <span>${dados.get(5)}</span><br></br>
-					    Cidade: <span>${dados.get(4)}</span><br></br>
-					    Inicio: <span>${dados.get(11)}</span><br></br>
-					    Fim: <span>${dados.get(12)}</span>
-					  </div>
+	<div class="row">
+		<div class="col-lg-4">
+			<div class="panel panel-info">
+				<div class="panel-heading" style="color:#fff;background-color:#337ab7;border-color:#2e6da4">
+					<h3 class="panel-title">Solicitante</h3>
+				</div>
+				<div class="panel-body">
+					<span>${dados.get(0)}</span><br></br>
+						Matricula: <span>${dados.get(1)}</span><br></br>
+						Email: <span>${dados.get(2)}</span><br></br>
+						Tel: <span>${dados.get(3)}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="panel panel-info">
+				<div class="panel-heading" style="color:#fff;background-color:#337ab7;border-color:#2e6da4">
+					<h3 class="panel-title">Evento</h3>
+				</div>
+				<div class="panel-body">
+					<span>${dados.get(5)}</span><br></br>
+						Cidade: <span>${dados.get(4)}</span><br></br>
+						Inicio: <span>${dados.get(11)}</span><br></br>
+						Fim: <span>${dados.get(12)}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="panel panel-info">
+				<div class="panel-heading" style="color:#fff;background-color:#337ab7;border-color:#2e6da4">
+					<h3 class="panel-title">Afastamento</h3>
+				</div>
+				<div class="panel-body">
+					Status: <span>${dados.get(8)}</span><br></br>
+					Tipo: <span>${dados.get(6)}</span> Onus: <span>${dados.get(7)}</span><br></br>
+					Inicio: <span>${dados.get(9)}</span><br></br>
+					Fim: <span>${dados.get(10)}</span><br></br>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="col-lg-4">
-		<div class="panel panel-info">
-					  <div class="panel-heading" style="color:#fff;background-color:#337ab7;border-color:#2e6da4">
-					    <h3 class="panel-title">Afastamento</h3>
-					  </div>
-					  <div class="panel-body">
-					    Status: <span>${dados.get(8)}</span><br></br>
-					    Tipo: <span>${dados.get(6)}</span> Onus: <span>${dados.get(7)}</span><br></br>
-					    Inicio: <span>${dados.get(9)}</span><br></br>
-					    Fim: <span>${dados.get(10)}</span><br></br>
-					  </div>
-		</div>
-		</div>
+	<p>
+		<t:pagelink page="MudarStatus" class="btn btn-primary btn-default" style="margin-right:5px">Mudar Status</t:pagelink>
+		<t:pagelink page="ParecerCadastro" class="btn btn-primary btn-default" style="margin-right:5px">Deferir um Parecer</t:pagelink>
+		<t:pagelink page="RelatorCadastro" class="btn btn-primary btn-default" style="margin-right:5px">Cadastrar um Relator</t:pagelink>
+		<t:pagelink page="DocumentoCadastro" class="btn btn-primary btn-default" style="margin-right:5px">Cadastrar um Documento</t:pagelink>
+		<t:pagelink page="ParecerMostrar" class="btn btn-primary btn-default" style="margin-right:5px">Ver Pareceres</t:pagelink>
+	</p>
+	<div style="margin: 50px; margin-left:auto">
+		<t:grid source="documentos" row="documento" add="download">
+		    <p:downloadCell>
+		       <span>Download</span>
+		   	</p:downloadCell>
+		   	<p:empty>
+		       <div class="alert alert-info" role="alert">Nenhum documento cadastrado para esse afastamento.</div>
+		    </p:empty>
+		</t:grid>
 	</div>
-
-<p>
-<t:pagelink page="MudarStatus" class="btn btn-primary btn-default" style="margin-right:5px">Mudar Status</t:pagelink>
-<t:pagelink page="ParecerCadastro" class="btn btn-primary btn-default" style="margin-right:5px">Deferir um Parecer</t:pagelink>
-<t:pagelink page="RelatorCadastro" class="btn btn-primary btn-default" style="margin-right:5px">Cadastrar um Relator</t:pagelink>
-<t:pagelink page="DocumentoCadastro" class="btn btn-primary btn-default" style="margin-right:5px">Cadastrar um Documento</t:pagelink>
-<t:pagelink page="ParecerMostrar" class="btn btn-primary btn-default" style="margin-right:5px">Ver Pareceres</t:pagelink>
-</p>
-	
-<div style="margin: 50px; margin-left:auto">
-
-
-<t:grid source="documentos" row="documento" add="download">
-    <p:downloadCell>
-       <span>Download</span>
-   	</p:downloadCell>
-   	<p:empty>
-       <div class="alert alert-info" role="alert">Nenhum documento cadastrado para esse afastamento.</div>
-    </p:empty>
-</t:grid>
-
-</div>
 	
 	        
  </html>	

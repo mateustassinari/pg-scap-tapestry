@@ -1,44 +1,31 @@
-<html t:type="layout" title="Afastamentos"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
-      xmlns:p="tapestry:parameter"  >
+<html t:type="layout" title="Afastamentos" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
 
-
-<t:form t:id="buscar" class="form-horizontal">
-<fieldset>
-
-<!-- Form Name -->
-<legend>Entre com o ID do Afastamento:</legend>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="textinput">ID do Afastamento:</label>
-  <div class="controls">
-           <t:textfield t:id="id_afast" placeholder="00" validate="required"/>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="control-group">
-  <label class="control-label" for="singlebutton"></label>
-  <div class="controls">
-    <t:submit class="btn btn-primary" value="Buscar"/>
-  </div>
-</div>
-
-</fieldset>
-</t:form>
-
-<div style="margin: 50px; margin-left:auto">
-
-<t:grid source="afastamentos" row="afastamento" add="detalhes">
-      <p:detalhesCell>
-        	<t:actionlink t:id="ver" context="afastamento.id_afastamento">Ver</t:actionlink>
-      </p:detalhesCell>
-      <p:empty>
-         	<div class="alert alert-info" role="alert">Nenhum afastamento cadastrado.</div>
-   	  </p:empty>
-</t:grid>
-
-</div>
+	<t:form t:id="buscar" class="form-horizontal">
+		<fieldset>
+			<legend>Entre com o ID do Afastamento:</legend>
+			<div class="control-group">
+			  <label class="control-label" for="textinput">ID do Afastamento:</label>
+			  <div class="controls">
+			  	<t:textfield t:id="id_afast" placeholder="00" validate="required"/>
+			  </div>
+			</div>
+			<div class="control-group">
+			  <label class="control-label" for="singlebutton"></label>
+			  <div class="controls">
+			    <t:submit class="btn btn-primary" value="Buscar"/>
+			  </div>
+			</div>
+		</fieldset>
+	</t:form>
+	<div style="margin: 50px; margin-left:auto">
+		<t:grid source="afastamentos" row="afastamento" add="detalhes">
+		      <p:detalhesCell>
+		        	<t:actionlink t:id="ver" context="afastamento.id_afastamento">Ver</t:actionlink>
+		      </p:detalhesCell>
+		      <p:empty>
+		         	<div class="alert alert-info" role="alert">Nenhum afastamento cadastrado.</div>
+		   	  </p:empty>
+		</t:grid>
+	</div>
         
 </html>

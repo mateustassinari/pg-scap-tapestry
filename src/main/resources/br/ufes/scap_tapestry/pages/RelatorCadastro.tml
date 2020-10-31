@@ -1,33 +1,23 @@
-<html t:type="layout" title="Cadastro Relator"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
-        >
+<html t:type="layout" title="Cadastro Relator" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
 
 
-<t:form t:id="cadastro" class="form-horizontal">
-<fieldset>
-
-<!-- Form Name -->
-<legend>Entre com as informacoes do Relator:</legend>
-
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="textinput">Matricula do Professor:</label>
-  <div class="controls">
-    <t:textfield t:id="matriculaRelator" placeholder="0000000" validate="required"/>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="control-group">
-  <label class="control-label" for="singlebutton"></label>
-  <div class="controls">
-    <t:submit class="btn btn-primary" value="Salvar"/>
-  </div>
-</div>
-
-</fieldset>
-</t:form>
+	<t:form t:id="cadastro" class="form-horizontal">
+		<fieldset>
+			<legend>Entre com as informacoes do Relator:</legend>
+			<div class="control-group">
+			  <label class="control-label" for="textinput">Matricula do Professor:</label>
+			  <div class="controls">
+			    <t:textfield t:id="matriculaRelator" placeholder="0000000" validate="required"/>
+			  </div>
+			</div>
+			<div class="control-group">
+			  <label class="control-label" for="singlebutton"></label>
+			  <div class="controls">
+			    <t:submit class="btn btn-primary" value="Salvar"/>
+			  </div>
+			</div>
+		</fieldset>
+	</t:form>
 
 
 </html>

@@ -1,39 +1,28 @@
-<html t:type="layout" title="Cadastro Documento"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
-        >
+<html t:type="layout" title="Cadastro Documento" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
 
 
-<t:form t:id="cadastro" class="form-horizontal">
-<fieldset>
-<!-- Form Name -->
-<legend>Entre com os dados do Documento:</legend>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="textinput">Titulo do Arquivo:</label>
-  <div class="controls">
-           <t:textfield t:id="titulo" placeholder="Titulo do Arquivo" validate="required"/>
-  </div>
-</div>
-
-<!-- File Button --> 
-<div class="control-group">
-  <label class="control-label" for="filebutton">Arquivo</label>
-  <div class="controls">
-     <input t:type="upload" t:id="file" validate="required"/>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="control-group">
-  <label class="control-label" for="singlebutton"></label>
-  <div class="controls">
-    <t:submit class="btn btn-primary" value="Salvar"/>
-  </div>
-</div>
-
-
-</fieldset>
-</t:form>
+	<t:form t:id="cadastro" class="form-horizontal">
+		<fieldset>
+			<legend>Entre com os dados do Documento:</legend>
+			<div class="control-group">
+			  <label class="control-label" for="textinput">Titulo do Arquivo:</label>
+			  <div class="controls">
+			  	<t:textfield t:id="titulo" placeholder="Titulo do Arquivo" validate="required"/>
+			  </div>
+			</div>
+			<div class="control-group">
+			  <label class="control-label" for="filebutton">Arquivo</label>
+			  <div class="controls">
+			     <input t:type="upload" t:id="file" validate="required"/>
+			  </div>
+			</div>
+			<div class="control-group">
+			  <label class="control-label" for="singlebutton"></label>
+			  <div class="controls">
+			    <t:submit class="btn btn-primary" value="Salvar"/>
+			  </div>
+			</div>
+		</fieldset>
+	</t:form>
 
 </html>

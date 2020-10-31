@@ -1,49 +1,35 @@
-<html t:type="layout" title="Cadastro Mandato"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
-        >
+<html t:type="layout" title="Cadastro Mandato" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
 
 
-<t:form t:id="cadastro" class="form-horizontal">
-<fieldset>
-
-<!-- Form Name -->
-<legend>Insira os dados do Mandato:</legend>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="textinput">Matricula:</label>
-  <div class="controls">
-           <t:textfield t:id="matriculaoutra" placeholder="0000000" validate="required"/>
-  </div>
-</div>
-
-<!-- Data Field -->
-<div class="control-group">
-  <label class="control-label" for="textinput">Inicio do Mandato:</label>
-  <div class="controls">
-       <t:datefield t:id="datainicio" t:format="prop:dateInFormatStr" validate="required"/>
-    </div>
-</div>
-
-<!-- Data Field -->
-<div class="control-group">
-  <label class="control-label" for="textinput">Fim do Mandato:</label>
-  <div class="controls">
-       <t:datefield t:id="datafim" t:format="prop:dateInFormatStr" validate="required"/>
-    </div>
-</div>
-
-
-<!-- Button -->
-<div class="control-group">
-  <label class="control-label" for="singlebutton"></label>
-  <div class="controls">
-    <t:submit class="btn btn-primary" value="Salvar"/>
-  </div>
-</div>
-
-</fieldset>
-</t:form>
+	<t:form t:id="cadastro" class="form-horizontal">
+		<fieldset>
+			<legend>Insira os dados do Mandato:</legend>
+			<div class="control-group">
+			  <label class="control-label" for="textinput">Matricula:</label>
+			  <div class="controls">
+			  	<t:textfield t:id="matriculaoutra" placeholder="0000000" validate="required"/>
+			  </div>
+			</div>
+			<div class="control-group">
+			  <label class="control-label" for="textinput">Inicio do Mandato:</label>
+			  <div class="controls">
+			  	<t:datefield t:id="datainicio" t:format="prop:dateInFormatStr" validate="required"/>
+			  </div>
+			</div>
+			<div class="control-group">
+			  <label class="control-label" for="textinput">Fim do Mandato:</label>
+			  <div class="controls">
+			  	<t:datefield t:id="datafim" t:format="prop:dateInFormatStr" validate="required"/>
+			  </div>
+			</div>
+			<div class="control-group">
+			  <label class="control-label" for="singlebutton"></label>
+			  <div class="controls">
+			    <t:submit class="btn btn-primary" value="Salvar"/>
+			  </div>
+			</div>
+		</fieldset>
+	</t:form>
 
                
 </html>

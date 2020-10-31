@@ -1,6 +1,4 @@
-<html t:type="layout" title="Not found Scap_tapestry"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
-      xmlns:p="tapestry:parameter">
+<html t:type="layout" title="Not found Scap_tapestry" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
 
     <div class="row">
         <div class="span12">

@@ -1,18 +1,14 @@
-<html t:type="layout" title="Usuario"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
-      xmlns:p="tapestry:parameter"  >
+<html t:type="layout" title="Usuario" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
 
-<div style="margin: 50px; margin-left:auto">
-
-<t:grid source="pessoas" row="pessoa" add="cadastrar">
-	<p:cadastrarCell>
-    	<t:actionlink t:id="cadastrar" context="pessoa.matricula">Cadastrar Parentesco</t:actionlink>
-  	</p:cadastrarCell>
-   	<p:empty>
-    	<div class="alert alert-info" role="alert">Nenhuma pessoa cadastrada com esses dados.</div>
-   	</p:empty>
-</t:grid>
-
-</div>
+	<div style="margin: 50px; margin-left:auto">
+		<t:grid source="pessoas" row="pessoa" add="cadastrar">
+			<p:cadastrarCell>
+		    	<t:actionlink t:id="cadastrar" context="pessoa.matricula">Cadastrar Parentesco</t:actionlink>
+		  	</p:cadastrarCell>
+		   	<p:empty>
+		    	<div class="alert alert-info" role="alert">Nenhuma pessoa cadastrada com esses dados.</div>
+		   	</p:empty>
+		</t:grid>
+	</div>
         
 </html>
